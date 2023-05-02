@@ -1,0 +1,9 @@
+function is_prime(n)
+    if n < 2 then return false end
+    for i = 2, n - 1 do
+        if n % i == 0 then return false end
+    end
+    return true
+end
+
+print(is_prime(13))
